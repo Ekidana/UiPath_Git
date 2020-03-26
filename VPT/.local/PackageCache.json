@@ -104,11 +104,11 @@
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.uiautomation.activities/20.3.0-alpha\\lib/net461/UiPath.Wizards.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.Microsoft.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.uiautomation.activities/20.3.0-alpha"
     }
