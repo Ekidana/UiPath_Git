@@ -3,11 +3,11 @@
   "description": "How to encrypt password\r\n",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.0.7346.28183]",
     "UiPath.Excel.Activities": "[2.8.2-preview]",
     "UiPath.Mail.Activities": "[1.8.2-preview]",
     "UiPath.System.Activities": "[20.3.0-preview]",
-    "UiPath.UIAutomation.Activities": "[20.3.0-alpha]",
-    "UiPathTeam.Encryption.Activities": "[1.0.6844.29335]"
+    "UiPath.UIAutomation.Activities": "[20.3.0-alpha]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
