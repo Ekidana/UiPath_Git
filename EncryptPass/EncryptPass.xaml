@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="EncryptPass" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1248.87272727273,1958.4" sap2010:WorkflowViewState.IdRef="EncryptPass_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uca="clr-namespace:UiPath.Cryptography.Activities;assembly=UiPath.Cryptography.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="EncryptPass" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1290.76363636364,2560.58181818182" sap2010:WorkflowViewState.IdRef="EncryptPass_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uca="clr-namespace:UiPath.Cryptography.Activities;assembly=UiPath.Cryptography.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -49,7 +49,7 @@
       <AssemblyReference>UiPath.Cryptography</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This Program automates password creation and encryption" DisplayName="EncryptPass" sap:VirtualizedContainerService.HintSize="1259.34545454545,1893.81818181818" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This Program automates password creation and encryption" DisplayName="EncryptPass" sap:VirtualizedContainerService.HintSize="1301.23636363636,2395.63636363636" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Init_Choice" />
       <Variable x:TypeArguments="x:String" Name="Make_StorePassword" />
@@ -61,33 +61,72 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" Buttons="YesNo" ChosenButton="[Init_Choice]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1217.45454545455,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_17" Text="[&quot;This Program allows for creation &amp; encryption of passwords. Do you wish to begin?&quot;]" />
-    <If Condition="[Init_Choice.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="1217.45454545455,1672.14545454545" sap2010:WorkflowViewState.IdRef="If_6">
+    <ui:MessageBox Caption="{x:Null}" Buttons="YesNo" ChosenButton="[Init_Choice]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1259.34545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_17" Text="[&quot;This Program allows for creation &amp; encryption of passwords. Do you wish to begin?&quot;]" />
+    <If Condition="[Init_Choice.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="1259.34545454545,2173.96363636364" sap2010:WorkflowViewState.IdRef="If_6">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="838.690909090909,1521.16363636364" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence sap:VirtualizedContainerService.HintSize="880.581818181818,2022.98181818182" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap:VirtualizedContainerService.HintSize="796.8,1428.65454545455" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="838.690909090909,1930.47272727273" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="ChoiceToDelete_PlainText" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="754.909090909091,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_18" Text="[&quot;Welcome! &quot;]" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="754.909090909091,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_20" Text="[&quot;Your password file has been created.You will now enter a password of your choice.&quot;]" />
-            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="754.909090909091,91.6363636363636" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="True" Label="Password:" Title="Enter a password of your choice">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="796.8,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_18" Text="[&quot;Welcome! &quot;]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="796.8,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_20" Text="[&quot;Your password file has been created.You will now enter a password of your choice.&quot;]" />
+            <ui:InputDialog Options="{x:Null}" DisplayName="Private: Input Dialog" sap:VirtualizedContainerService.HintSize="796.8,91.6363636363636" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="True" Label="Password:" Title="Enter a password of your choice">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[Make_StorePassword]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:WriteTextFile DisplayName="Write Text File" FileName="C:\Users\ekida\OneDrive\Desktop\passUnEn.txt" sap:VirtualizedContainerService.HintSize="754.909090909091,134.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[Make_StorePassword]" />
-            <uca:EncryptFile Algorithm="AES" DisplayName="Encrypt File" sap:VirtualizedContainerService.HintSize="754.909090909091,126.545454545455" sap2010:WorkflowViewState.IdRef="EncryptFile_1" InputFilePath="C:\Users\ekida\OneDrive\Desktop\passUnEn.txt" Key="passEn" KeyEncoding="[System.Text.Encoding.UTF8]" OutputFilePath="C:\Users\ekida\OneDrive\Desktop\passEn.txt" Overwrite="False" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="754.909090909091,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_22" Text="[&quot;File has been sucessfully encrypted and stored on the Desktop&quot;]" />
-            <ui:MessageBox Buttons="YesNo" Caption="Decrypt Password" ChosenButton="[Decrypt_Choice]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="754.909090909091,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;Do you wish to decrypt the file?&quot;]" />
-            <If Condition="[Decrypt_Choice.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="754.909090909091,468.654545454545" sap2010:WorkflowViewState.IdRef="If_7">
+            <ui:WriteTextFile sap2010:Annotation.AnnotationText="creation of PlainText password " DisplayName="Write Text File" FileName="C:\Users\ekida\OneDrive\Desktop\passUnEn.txt" sap:VirtualizedContainerService.HintSize="796.8,164.945454545455" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[Make_StorePassword]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:WriteTextFile>
+            <uca:EncryptFile Algorithm="AES" sap2010:Annotation.AnnotationText="Encrypt the PlainText password" DisplayName="Encrypt File" sap:VirtualizedContainerService.HintSize="796.8,157.090909090909" sap2010:WorkflowViewState.IdRef="EncryptFile_1" InputFilePath="C:\Users\ekida\OneDrive\Desktop\passUnEn.txt" Key="passEn" KeyEncoding="[System.Text.Encoding.UTF8]" OutputFilePath="C:\Users\ekida\OneDrive\Desktop\passEn.txt" Overwrite="False">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uca:EncryptFile>
+            <ui:MessageBox Buttons="YesNo" Caption="Option to Delete Original PlainText" ChosenButton="[ChoiceToDelete_PlainText]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="796.8,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_28" Text="[&quot;Do you wish to delete the plaintext file?&quot;]" />
+            <If Condition="[ChoiceToDelete_PlainText.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="796.8,400.581818181818" sap2010:WorkflowViewState.IdRef="If_8">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376.145454545455,212.945454545455" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_26" Text="[&quot;The original plaintext password file will be deleted&quot;]" />
+                  <ui:Delete ContinueOnError="{x:Null}" DisplayName="Delete the Original Plaintext File" sap:VirtualizedContainerService.HintSize="334.254545454545,21.8181818181818" sap2010:WorkflowViewState.IdRef="Delete_1" Path="C:\Users\ekida\OneDrive\Desktop\passUnEn.txt" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376.145454545455,249.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Warning" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_27" Text="[&quot;The Original PlainText file will not be deleted. Please store it in a safe location&quot;]" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_22" Text="[&quot;File has been sucessfully encrypted and stored on the Desktop&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:MessageBox Buttons="YesNo" Caption="Decrypt Password" ChosenButton="[Decrypt_Choice]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="796.8,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;Do you wish to decrypt the file?&quot;]" />
+            <If Condition="[Decrypt_Choice.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="796.8,468.654545454545" sap2010:WorkflowViewState.IdRef="If_7">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="376.145454545455,317.672727272727" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
