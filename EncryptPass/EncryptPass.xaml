@@ -135,11 +135,11 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uca:DecryptFile Algorithm="AES" DisplayName="Decrypt File" sap:VirtualizedContainerService.HintSize="334.254545454545,126.545454545455" sap2010:WorkflowViewState.IdRef="DecryptFile_1" InputFilePath="C:\Users\ekida\OneDrive\Desktop\passEn.txt" Key="passEn" KeyEncoding="[System.Text.Encoding.UTF8]" OutputFilePath="C:\Users\ekida\OneDrive\Desktop\Decrypt.txt" Overwrite="False" />
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_25" Text="[&quot;File has been sucessfully decrypted&quot;]" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_25" Text="[&quot;File has been sucessfully decrypted. It is stored on the Desktop as a Human-Readable text file. Store it safely!&quot;]" />
                 </Sequence>
               </If.Then>
               <If.Else>
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_24" Text="[&quot;Thank You for using EncrypTOR. Your encrypted password file is stored on the desktop&quot;]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_24" Text="[&quot;Thank You for using EncrypTOR. Your encrypted password file is stored on the desktop as a text file&quot;]" />
               </If.Else>
             </If>
           </Sequence>
