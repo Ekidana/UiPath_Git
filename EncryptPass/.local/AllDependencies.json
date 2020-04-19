@@ -1728,9 +1728,9 @@
     "restore": {
       "projectUniqueName": "EncryptPass",
       "projectName": "EncryptPass",
-      "projectPath": "C:\\Users\\ekida\\OneDrive\\Desktop\\NYP\\FYPJ\\UiPath\\UiPath_Projects_Git\\UiPath_Git\\EncryptPass\\EncryptPass\\.local",
+      "projectPath": "C:\\Users\\ekida\\OneDrive\\Desktop\\NYP\\FYPJ\\UiPath\\UiPath_Projects_Git\\UiPath_Git\\UiPath_Git\\EncryptPass\\.local",
       "packagesPath": "C:\\Users\\ekida\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ekida\\OneDrive\\Desktop\\NYP\\FYPJ\\UiPath\\UiPath_Projects_Git\\UiPath_Git\\EncryptPass\\EncryptPass\\.local"
+      "outputPath": "C:\\Users\\ekida\\OneDrive\\Desktop\\NYP\\FYPJ\\UiPath\\UiPath_Projects_Git\\UiPath_Git\\UiPath_Git\\EncryptPass\\.local"
     },
     "frameworks": {
       "net461": {
