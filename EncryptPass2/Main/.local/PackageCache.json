@@ -2,6 +2,18 @@
   "Packages": [
     {
       "Package": {
+        "Id": "UiPath.Cryptography.Activities",
+        "Version": "1.0.7346.28183"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities/1.0.7346.28183\\lib/net452/UiPath.Cryptography.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities/1.0.7346.28183\\lib/net452/UiPath.Cryptography.Activities.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities/1.0.7346.28183\\lib/net452/UiPath.Cryptography.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities\\1.0.7346.28183"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.8.3-beta.867639"
       },
@@ -10,10 +22,10 @@
         "C:\\Users\\ekida\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.excel.activities/2.8.3-beta.867639\\lib/net461/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.excel.activities/2.8.3-beta.867639\\lib/net461/UiPath.Excel.Activities.dll",
@@ -43,27 +55,27 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "20.4.0-beta.864462"
+        "Version": "20.4.0-beta.889657"
       },
       "Assemblies": [
         "C:\\Users\\ekida\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.864462\\lib/net461/UiPath.System.Activities.dll"
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities/20.4.0-beta.889657\\lib/net461/UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462"
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657"
     },
     {
       "Package": {
@@ -72,10 +84,10 @@
       },
       "Assemblies": [
         "C:\\Users\\ekida\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
@@ -106,13 +118,59 @@
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.uiautomation.activities/20.4.0-beta.866690\\lib/net461/UiPath.Wizards.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.Core.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.Microsoft.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision/2.0.3-beta.853545\\lib/net461/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.uiautomation.activities\\20.4.0-beta.866690"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.CustomInputDialog.Activities",
+        "Version": "1.1.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\system.io.compression/4.3.0\\lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities/1.1.0.3\\lib/net452/UiPath.CustomInputForm.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities/1.1.0.3\\lib/net452/UiPathTeam.CustomInputForm.Activities.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities\\1.1.0.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.File.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities/1.0.4\\lib/net452/UiPathTeam.File.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities/1.0.4\\lib/net452/UiPathTeam.File.Activities.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.FileWatcher.Activities",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.filewatcher.activities/1.2.0\\lib/FileWatcher.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.filewatcher.activities\\1.2.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Word.Activities",
+        "Version": "1.4.2-beta.889267"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\docx/1.0.0.18\\lib/net40/DocX.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities/1.4.2-beta.889267\\lib/net461/UiPath.Word.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities/1.4.2-beta.889267\\lib/net461/UiPath.Word.Activities.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities/1.4.2-beta.889267\\lib/net461/UiPath.Word.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities\\1.4.2-beta.889267"
     }
   ],
   "Conflicts": [],
@@ -145,6 +203,11 @@
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "DocX": {
+      "Id": "DocX",
+      "Version": "1.0.0.18",
       "Dependencies": []
     },
     "Extended.Wpf.Toolkit": {
@@ -217,6 +280,11 @@
       "Version": "3.0.10",
       "Dependencies": []
     },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
     "System.Threading.Tasks.Dataflow": {
       "Id": "System.Threading.Tasks.Dataflow",
       "Version": "4.10.0",
@@ -230,6 +298,11 @@
     "UiPath": {
       "Id": "UiPath",
       "Version": "20.4.7391.34509",
+      "Dependencies": []
+    },
+    "UiPath.Cryptography.Activities": {
+      "Id": "UiPath.Cryptography.Activities",
+      "Version": "1.0.7346.28183",
       "Dependencies": []
     },
     "UiPath.Excel.Activities": {
@@ -309,7 +382,7 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "20.4.0-beta.864462",
+      "Version": "20.4.0-beta.889657",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -394,6 +467,36 @@
           "Item2": "[2.6.0-beta.835380, )"
         }
       ]
+    },
+    "UiPath.Word.Activities": {
+      "Id": "UiPath.Word.Activities",
+      "Version": "1.4.2-beta.889267",
+      "Dependencies": [
+        {
+          "Item1": "DocX",
+          "Item2": "[1.0.0.18, )"
+        }
+      ]
+    },
+    "UiPathTeam.CustomInputDialog.Activities": {
+      "Id": "UiPathTeam.CustomInputDialog.Activities",
+      "Version": "1.1.0.3",
+      "Dependencies": [
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "UiPathTeam.File.Activities": {
+      "Id": "UiPathTeam.File.Activities",
+      "Version": "1.0.4",
+      "Dependencies": []
+    },
+    "UiPathTeam.FileWatcher.Activities": {
+      "Id": "UiPathTeam.FileWatcher.Activities",
+      "Version": "1.2.0",
+      "Dependencies": []
     }
   },
   "AllPackages": [
@@ -449,14 +552,24 @@
     },
     {
       "Package": {
+        "Id": "DocX",
+        "Version": "1.0.0.18"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\docx\\1.0.0.18\\lib\\net40\\DocX.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\docx\\1.0.0.18"
+    },
+    {
+      "Package": {
         "Id": "Extended.Wpf.Toolkit",
         "Version": "2.8.0"
       },
       "Assemblies": [
-        "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\extended.wpf.toolkit\\2.8.0\\lib\\net40\\Xceed.Wpf.Toolkit.dll"
       ],
@@ -539,10 +652,10 @@
         "Version": "2.4.1"
       },
       "Assemblies": [
-        "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OOXML.dll",
         "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\npoi\\2.4.1"
     },
@@ -565,6 +678,16 @@
         "C:\\Users\\ekida\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib\\net40\\System.IO.Abstractions.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\system.io.abstractions\\3.0.10"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\system.io.compression\\4.3.0\\lib\\net46\\System.IO.Compression.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\system.io.compression\\4.3.0"
     },
     {
       "Package": {
@@ -595,6 +718,18 @@
         "C:\\Users\\ekida\\.nuget\\packages\\uipath\\20.4.7391.34509\\lib\\UiPath.Interop.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath\\20.4.7391.34509"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Cryptography.Activities",
+        "Version": "1.0.7346.28183"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities\\1.0.7346.28183\\lib\\net452\\UiPath.Cryptography.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities\\1.0.7346.28183\\lib\\net452\\UiPath.Cryptography.Activities.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities\\1.0.7346.28183\\lib\\net452\\UiPath.Cryptography.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.cryptography.activities\\1.0.7346.28183"
     },
     {
       "Package": {
@@ -645,24 +780,24 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "20.4.0-beta.864462"
+        "Version": "20.4.0-beta.889657"
       },
       "Assemblies": [
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\CustomInputForm.exe",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462\\lib\\net461\\UiPath.System.Activities.dll"
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\CustomInputForm.exe",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657\\lib\\net461\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.864462"
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.system.activities\\20.4.0-beta.889657"
     },
     {
       "Package": {
@@ -710,6 +845,50 @@
         "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision\\2.0.3-beta.853545\\lib\\net461\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.vision\\2.0.3-beta.853545"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Word.Activities",
+        "Version": "1.4.2-beta.889267"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities\\1.4.2-beta.889267\\lib\\net461\\UiPath.Word.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities\\1.4.2-beta.889267\\lib\\net461\\UiPath.Word.Activities.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities\\1.4.2-beta.889267\\lib\\net461\\UiPath.Word.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipath.word.activities\\1.4.2-beta.889267"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.CustomInputDialog.Activities",
+        "Version": "1.1.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities\\1.1.0.3\\lib\\net452\\UiPath.CustomInputForm.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities\\1.1.0.3\\lib\\net452\\UiPathTeam.CustomInputForm.Activities.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.custominputdialog.activities\\1.1.0.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.File.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities\\1.0.4\\lib\\net452\\UiPathTeam.File.Activities.Design.dll",
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities\\1.0.4\\lib\\net452\\UiPathTeam.File.Activities.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.file.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.FileWatcher.Activities",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.filewatcher.activities\\1.2.0\\lib\\FileWatcher.dll"
+      ],
+      "Path": "C:\\Users\\ekida\\.nuget\\packages\\uipathteam.filewatcher.activities\\1.2.0"
     }
   ]
 }

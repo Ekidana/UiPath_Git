@@ -1,62 +1,390 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="EncryptPass2" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="EncryptPass2_1"
- xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" 
- xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
- xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
- xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" 
- xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" 
- xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" 
- xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" 
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
-    <Sequence DisplayName="EncryptPass2" sap2010:WorkflowViewState.IdRef="Sequence_1">
-        <sap:WorkflowViewStateService.ViewState>
+<Activity mc:Ignorable="sap sap2010" x:Class="EncryptPass2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1650.32727272727,4922.18181818182" sap2010:WorkflowViewState.IdRef="EncryptPass2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uca="clr-namespace:UiPath.Cryptography.Activities;assembly=UiPath.Cryptography.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Text</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="EncryptPass2" sap:VirtualizedContainerService.HintSize="1660.8,4757.23636363636" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="InitialMessage_Yes" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" Buttons="YesNo" ChosenButton="[InitialMessage_Yes]" DisplayName="InitialMessage" sap:VirtualizedContainerService.HintSize="1618.90909090909,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Welcome to EncrypTOR, a password encryption App.  Do you wish to begin?&quot;]" />
+    <If sap2010:Annotation.AnnotationText="Triggers &quot;Then &quot; if user press &quot;YES&quot;. &#xA;" Condition="[InitialMessage_Yes.Equals(&quot;Yes&quot;)]" DisplayName="If InitialMessage_Yes_No" sap:VirtualizedContainerService.HintSize="1618.90909090909,4566.10909090909" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="1240.14545454545,4369.74545454545" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="FolderCreate" />
+            <Variable x:TypeArguments="x:String" Name="ReConfirmFolderLocation" />
+            <Variable x:TypeArguments="x:String" Name="FileCreate" />
+            <Variable x:TypeArguments="x:String" Name="ReConfirmFileNameTXT" />
+            <Variable x:TypeArguments="x:String" Name="FullPathFileTXT" />
+            <Variable x:TypeArguments="x:String" Name="ProgramSelector" />
+            <Variable x:TypeArguments="x:Boolean" Name="ReConfirmFileNameDOCX" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-    </Sequence>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InterruptibleDoWhile DisplayName="Do While- MakeFolder" sap:VirtualizedContainerService.HintSize="1198.25454545455,540.218181818182" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile.Body>
+              <Sequence sap2010:Annotation.AnnotationText="Will keep looping asking for User Satisfied name unless YES is pressed " DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.145454545455,373.527272727273" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Input Dialog (Ask user of create file location) &#xA;" DisplayName="Folder Create Location" sap:VirtualizedContainerService.HintSize="334.254545454545,137.018181818182" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="[&quot;In which location do you wish to create your folder? &quot;+vbCrLf+&quot;Please key in the the location in this format  (DriveLetter:\Folder) &quot;]" Title="Create a Folder location.">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:String">[FolderCreate]</OutArgument>
+                  </ui:InputDialog.Result>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InputDialog>
+                <ui:MessageBox Buttons="YesNo" Caption="[&quot;Confirm&quot; +FolderCreate]" ChosenButton="[ReConfirmFolderLocation]" DisplayName="Ask folder location again if wrong input" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Is  &quot;+FolderCreate+&quot;  the correct location &amp; name you wish to store your folder with?&quot;]" />
+              </Sequence>
+            </ui:InterruptibleDoWhile.Body>
+            <ui:InterruptibleDoWhile.Condition>
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="ReConfirmFolderLocation.Equals(&quot;No&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
+            </ui:InterruptibleDoWhile.Condition>
+          </ui:InterruptibleDoWhile>
+          <ui:CreateDirectory ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="After Confirming location will create file in specific location&#xA;" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1198.25454545455,142.254545454545" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[FolderCreate]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CreateDirectory>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="CreateFolder_ConfirmAction " sap:VirtualizedContainerService.HintSize="1198.25454545455,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;A folder with the name &quot;+ FolderCreate+&quot; has been made&quot;]" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1198.25454545455,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[&quot;A file will now be created in &quot;+FolderCreate]" />
+          <ui:MessageBox sap2010:Annotation.AnnotationText="Variable is for ProgramSelector. &#xA;User can select between txt or docx" Buttons="YesNo" Caption="Notepad(txt) or Word(docx)?" ChosenButton="[ProgramSelector]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1198.25454545455,103.854545454545" sap2010:WorkflowViewState.IdRef="MessageBox_13" Text="[&quot;Click on Yes for the file to be opened by Notepad&quot;+vbCrLf+&quot;Click No for file to be opened by Word document.&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MessageBox>
+          <If Condition="[ProgramSelector.Equals(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="1198.25454545455,3173.23636363636" sap2010:WorkflowViewState.IdRef="If_3">
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="579.490909090909,3022.25454545455" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="EncryptPassword" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="537.6,2532.65454545455" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="ui:GenericValue" Name="OpenNotepad" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="495.709090909091,953.018181818182" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="453.818181818182,541.963636363636" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                      <ui:InterruptibleDoWhile.Body>
+                        <Sequence sap:VirtualizedContainerService.HintSize="418.036363636364,375.272727272727" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.145454545455,282.763636363636" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:InputDialog Options="{x:Null}" DisplayName="FileCreateLocation" sap:VirtualizedContainerService.HintSize="334.254545454545,91.6363636363636" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False" Label="Please key in a file name of your choice" Title="Create a file">
+                              <ui:InputDialog.Result>
+                                <OutArgument x:TypeArguments="x:String">[FileCreate]</OutArgument>
+                              </ui:InputDialog.Result>
+                            </ui:InputDialog>
+                            <ui:MessageBox Buttons="YesNo" Caption="[&quot;Confirm&quot; +FolderCreate]" ChosenButton="[ReConfirmFileNameTXT]" DisplayName="Ask file name again if wrong input(TXT VERSION)" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Is &quot; + FileCreate+&quot;.txt&quot; + &quot; the correct name of your file?&quot;]" />
+                          </Sequence>
+                        </Sequence>
+                      </ui:InterruptibleDoWhile.Body>
+                      <ui:InterruptibleDoWhile.Condition>
+                        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="ReConfirmFileNameTXT.Equals(&quot;No&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
+                      </ui:InterruptibleDoWhile.Condition>
+                    </ui:InterruptibleDoWhile>
+                    <ui:CreateFile ContinueOnError="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="453.818181818182,134.4" sap2010:WorkflowViewState.IdRef="CreateFile_3" Name="[FileCreate+&quot;.txt&quot;]" Path="[FolderCreate]" />
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Message Box to show full path" sap:VirtualizedContainerService.HintSize="453.818181818182,103.854545454545" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;This is where your file is stored and named as:&quot;+vbCrLf+  FolderCreate+&quot;\&quot;+FileCreate+&quot;.txt&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MessageBox>
+                  </Sequence>
+                  <Sequence DisplayName="Open notepad &amp; ask for user input" sap:VirtualizedContainerService.HintSize="495.709090909091,523.636363636364" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="334.254545454545,60.2181818181818" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="ui:GenericValue">[OpenNotepad]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="ui:GenericValue">["notepad.exe"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="334.254545454545,60.2181818181818" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[FullPathFileTXT]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[FolderCreate+"\"+FileCreate+".txt"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="[&quot;System pause for your input in&quot;+FileCreate+&quot;.txt&quot;]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_30" Text="[&quot;Notepad will now open your created file&quot;  +vbCrLf+   &quot;The automation System will pause for your input in &quot;+FileCreate+&quot;.txt.&quot; +vbCrLf+ &quot; Do not press outside of the Word/Text Editor window to prevent distruption.&quot;  +vbCrLf+  &quot;Once done with your entry please press [ctrl alt b ]  on your keyboard.&quot;]" />
+                    <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="FullFilePath variable is not available for starting apps. &#xA; Or use variable and concatenate with strings." Arguments="[FullPathFileTXT]" DisplayName="Start notepad" FileName="[OpenNotepad]" sap:VirtualizedContainerService.HintSize="334.254545454545,131.781818181818" sap2010:WorkflowViewState.IdRef="StartProcess_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:StartProcess>
+                  </Sequence>
+                  <ui:MonitorEvents ContinueOnError="{x:Null}" DisplayName="Monitor Events" sap:VirtualizedContainerService.HintSize="495.709090909091,883.2" sap2010:WorkflowViewState.IdRef="MonitorEvents_2">
+                    <ui:MonitorEvents.Handler>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="args" />
+                        </ActivityAction.Argument>
+                        <Sequence sap:VirtualizedContainerService.HintSize="418.036363636364,714.763636363636" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Event Handler" sap:VirtualizedContainerService.HintSize="376.145454545455,622.254545454545" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334.254545454545,116.945454545455" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="81488190-8be9-4242-96ac-6272ea01f59c">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334.254545454545,116.945454545455" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="15bff94a-bfa4-4a5a-8bcc-9cd3b642a809">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334.254545454545,116.945454545455" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="f4" KeyModifiers="Alt" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b774fe6c-832f-46ef-b003-1434b29492c6">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_27" Text="[&quot;Your entered data has been saved to &quot;+FullPathFileTXT]" />
+                          </Sequence>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:MonitorEvents.Handler>
+                    <ui:MonitorEvents.RepeatForever>
+                      <Literal x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="Literal`1_2" />
+                    </ui:MonitorEvents.RepeatForever>
+                    <ui:MonitorEvents.Triggers>
+                      <ui:HotkeyTrigger DisplayName="Hotkey Trigger" EventMode="EVENT_FORWARD" sap:VirtualizedContainerService.HintSize="334.254545454545,84.6545454545455" sap2010:WorkflowViewState.IdRef="HotkeyTrigger_2" Key="b" KeyModifiers="Ctrl" UseWindowsHotKey="False" />
+                    </ui:MonitorEvents.Triggers>
+                  </ui:MonitorEvents>
+                </Sequence>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="537.6,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_28" Text="[&quot;An input box will now appear asking you to input a password.&quot;  +vbCrLf+   &quot;This password will be used to encrypt&quot;+FileCreate+&quot;.txt&quot;  +vbCrLf+   &quot;This password will not be saved. Please take a picture or write it and store it somewhere safe.&quot;]" />
+                <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="537.6,91.6363636363636" sap2010:WorkflowViewState.IdRef="InputDialog_14" IsPassword="True" Label="Password for file encryption" Title="Encrypt File">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:String">[EncryptPassword]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <uca:EncryptFile Algorithm="AES" DisplayName="Encrypt File" sap:VirtualizedContainerService.HintSize="537.6,126.545454545455" sap2010:WorkflowViewState.IdRef="EncryptFile_1" InputFilePath="[FullPathFileTXT]" Key="[EncryptPassword]" KeyEncoding="[System.Text.Encoding.UTF8]" OutputFilePath="[FolderCreate]" Overwrite="False" />
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="574.254545454545,1576.14545454545" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap:VirtualizedContainerService.HintSize="532.363636363636,1483.63636363636" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="490.472727272727,572.509090909091" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="411.927272727273,480" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+                      <ui:InterruptibleDoWhile.Body>
+                        <Sequence sap2010:Annotation.AnnotationText="docx retry" DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.145454545455,313.309090909091" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InputDialog Options="{x:Null}" DisplayName="FileCreateLocation" sap:VirtualizedContainerService.HintSize="334.254545454545,91.6363636363636" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="Please key in a file name of your choice" Title="Create a file">
+                            <ui:InputDialog.Result>
+                              <OutArgument x:TypeArguments="x:String">[FileCreate]</OutArgument>
+                            </ui:InputDialog.Result>
+                          </ui:InputDialog>
+                          <ui:MessageBox Buttons="YesNo" Caption="[&quot;Confirm&quot; +FolderCreate]" ChosenButton="[ReConfirmFileNameTXT]" DisplayName="Ask file name again if wrong input(DOCX VERSION)" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_29" Text="[&quot;Is &quot; + FileCreate+&quot;.docx&quot; + &quot; the correct name of your file?&quot;]" />
+                        </Sequence>
+                      </ui:InterruptibleDoWhile.Body>
+                      <ui:InterruptibleDoWhile.Condition>
+                        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="ReConfirmFileNameDOCX.Equals(&quot;No&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                      </ui:InterruptibleDoWhile.Condition>
+                    </ui:InterruptibleDoWhile>
+                  </Sequence>
+                  <ui:CreateFile ContinueOnError="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="490.472727272727,134.4" sap2010:WorkflowViewState.IdRef="CreateFile_4" Name="[FileCreate+&quot;.docx&quot;]" Path="[FolderCreate]" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Message Box to show full path" sap:VirtualizedContainerService.HintSize="490.472727272727,103.854545454545" sap2010:WorkflowViewState.IdRef="MessageBox_31" Text="[&quot;This is where your file is stored and named as:&quot;+vbCrLf+  FolderCreate+&quot;\&quot;+FileCreate+&quot;.docx&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MessageBox>
+                  <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="[&quot;System pause for your input in&quot;+FileCreate+&quot;.txt&quot;]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="490.472727272727,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_32" Text="[&quot;Microsoft Word will now open your created file&quot;  +vbCrLf+   &quot;The automation System will pause for your input in &quot;+FileCreate+&quot;.txt.&quot; +vbCrLf+ &quot; Do not press outside of the Word/Text Editor window to prevent distruption.&quot;  +vbCrLf+  &quot;Once done with your entry please press [ctrl b ]  on your keyboard.&quot;]" />
+                  <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[FolderCreate+&quot;\&quot;+FileCreate]" sap:VirtualizedContainerService.HintSize="490.472727272727,361.309090909091" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                    <p:WordApplicationScope.Body>
+                      <ActivityAction x:TypeArguments="ui:WordDocument">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                        </ActivityAction.Argument>
+                        <ui:MonitorEvents ContinueOnError="{x:Null}" DisplayName="Monitor Events" sap:VirtualizedContainerService.HintSize="456.436363636364,253.090909090909" sap2010:WorkflowViewState.IdRef="MonitorEvents_3" RepeatForever="True">
+                          <ui:MonitorEvents.Handler>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="args" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Event Handler" sap:VirtualizedContainerService.HintSize="199.854545454545,84.6545454545455" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:MonitorEvents.Handler>
+                          <ui:MonitorEvents.Triggers>
+                            <ui:HotkeyTrigger DisplayName="Hotkey Trigger" EventMode="EVENT_BLOCK" sap:VirtualizedContainerService.HintSize="334.254545454545,84.6545454545455" sap2010:WorkflowViewState.IdRef="HotkeyTrigger_3" Key="b" KeyModifiers="Ctrl" UseWindowsHotKey="False" />
+                          </ui:MonitorEvents.Triggers>
+                        </ui:MonitorEvents>
+                      </ActivityAction>
+                    </p:WordApplicationScope.Body>
+                  </p:WordApplicationScope>
+                </Sequence>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thank you for using encrypTOR&quot;]" />
+      </If.Else>
+    </If>
+  </Sequence>
 </Activity>

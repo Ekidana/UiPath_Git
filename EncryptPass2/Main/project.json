@@ -3,10 +3,15 @@
   "description": "Main Parent for EncryptPass_Ver2\r\n",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.0.7346.28183]",
     "UiPath.Excel.Activities": "[2.8.3-beta.867639]",
     "UiPath.Mail.Activities": "[1.8.3-beta.865074]",
-    "UiPath.System.Activities": "[20.4.0-beta.864462]",
-    "UiPath.UIAutomation.Activities": "[20.4.0-beta.866690]"
+    "UiPath.System.Activities": "[20.4.0-beta.889657]",
+    "UiPath.UIAutomation.Activities": "[20.4.0-beta.866690]",
+    "UiPath.Word.Activities": "[1.4.2-beta.889267]",
+    "UiPathTeam.CustomInputDialog.Activities": "[1.1.0.3]",
+    "UiPathTeam.File.Activities": "[1.0.4]",
+    "UiPathTeam.FileWatcher.Activities": "[1.2.0]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
